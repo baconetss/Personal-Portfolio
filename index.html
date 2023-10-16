@@ -173,6 +173,11 @@
             </div>
         </div>
     </div>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
     <div class="copyright">
         <p>Copyright © Paul Bacon 2023. Made by <i class="fa-solid fa-heart"></i> yours truly </p>
     </div>
@@ -207,6 +212,21 @@
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
+
+</script>
+
+<script>
+
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll"), () => {
+        if(window.pageXOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+        }
+    }
+        
 
 </script>
 
